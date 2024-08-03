@@ -1,5 +1,5 @@
 # Install dependencies
-pip3 install -r requirements.txt
+pythpn3.9 -m pip3 install -r requirements.txt
 
 # make migrations
 echo "Running MIgrations...."
