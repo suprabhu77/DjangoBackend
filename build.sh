@@ -1,5 +1,13 @@
-# build_files.sh
-pip install -r requirements.txt
+#!/bin/bash
+
+# Update package lists
+apt-get update
+
+# Install Python and pip
+apt-get install -y python3.9 python3.9-pip
+
+# Install dependencies
+pip3 install -r requirements.txt
 
 # make migrations
 echo "Running MIgrations...."
