@@ -2,7 +2,7 @@
 
 # Install dependencies
 echo "Installing dependencies..."
-python3.9 -m pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 # Run Django collectstatic to gather static files
 echo "Collecting static files..."
