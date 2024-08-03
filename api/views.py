@@ -23,6 +23,7 @@ class CreateNote(ViewSet):
             data = request.data
             if not data:
                 raise ValueError("No Data")
+            print(request.auth)
             instance = Note.objects.create(name="Check", description="description", user_id=request.auth.get('user_id'))
             return Response({"data":f"Successfully Created the Note - {instance.name}"}, status=200)
         except ValueError as e:
